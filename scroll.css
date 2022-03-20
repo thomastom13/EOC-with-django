@@ -1,0 +1,98 @@
+::-webkit-scrollbar{
+ 
+  width:20px;height:2px;
+  
+  background-color: rgb(255, 255, 255);
+  margin-top: 20px;
+  position: relative;
+  z-index: 100;
+
+}
+::-webkit-scrollbar-button{width:20px;height:20px;background-color: brown;
+position: relative;
+z-index:-100;
+}
+
+div{
+  box-sizing:border-box;
+  z-index:10px;
+}
+
+body {
+  background: #111;
+}
+
+.horizontal-scroll-wrapper{
+  position:absolute;
+  display:block;
+  top:60px;
+  left:60px;
+  width:80px;
+  max-height:500px;
+  margin:0;
+  background:rgb(77, 255, 0);
+  overflow-y:auto;
+  overflow-x:hidden;
+  transform:rotate(-90deg) translateY(-80px);
+  transform-origin:right top;
+}
+.horizontal-scroll-wrapper > div{
+  display:block;
+  padding:5px;
+  background:rgb(9, 12, 194);
+  transform:rotate(90deg);
+  transform-origin: right top;
+}
+
+.squares{
+  padding:60px 0 0 0;
+}
+
+.squares > div{
+  width:60px;
+  height:60px;
+  margin:10px;
+}
+
+.rectangles{
+  top:100px;
+  padding:100px 0 0 0;
+}
+.rectangles > div{
+  width:140px;
+  height:60px;
+  margin:50px 10px;
+  padding:5px;
+  background:#cab;
+  transform:rotate(90deg) translateY(80px);
+  transform-origin: right top;
+}
+
+
+/* .row{
+    align-items: stretch;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  .card {
+    /*float: left;*/
+    /* max-width: 33.333%;
+    padding: .75rem;
+    margin-bottom: 2rem;
+    border: 0;
+    flex-basis: 33.333%;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+  
+  .card > img {
+    margin-bottom: .75rem;
+    width: 100%;
+  }
+  
+  .card-text {
+    font-size: 85%;
+  } */ 

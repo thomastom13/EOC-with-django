@@ -1,0 +1,49 @@
+::-webkit-scrollbar{
+ 
+    width:10px;height:20px;
+    
+    background-color: rgb(128, 0, 0);
+    /* margin-top: 20px; */
+    position: absolute;
+    z-index:10;
+    background-color: blueviolet;
+    overflow-y: hidden;  
+  }
+  ::-webkit-scrollbar-button{width:20px;height:20px;background-color: brown;
+  position: absolute;
+  z-index:10;
+  width: 1px;
+
+  }
+  
+
+.row{
+    position: relative;
+    align-items: stretch;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    /* overflow: hidden; */
+    overflow-x: auto;
+    overflow-y: hidden ;
+  }
+  .card {
+    /*float: left;*/
+    position: relative;
+    max-width: 33.333%;
+    padding: .75rem;
+    margin-bottom: 2rem;
+    border: 0;
+    flex-basis: 33.333%;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+  
+  .card > img {
+    margin-bottom: .75rem;
+    width: 100%;
+  }
+  
+  .card-text {
+    font-size: 85%;
+  }
