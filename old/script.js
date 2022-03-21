@@ -3,6 +3,7 @@ const buttonLeft = document.getElementById('slideLeft');
 
 buttonRight.onclick = function () {
   document.getElementById('rowscroll').scrollLeft += 300;
+  console.log("Button")
 };
 buttonLeft.onclick = function () {
   document.getElementById('rowscroll').scrollLeft -= 300;
