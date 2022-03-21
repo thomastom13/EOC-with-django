@@ -11,7 +11,7 @@
     margin-right: 5px;
 }
 .rowscroll{
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(253, 247, 247);
   overflow-x: scroll;
   scroll-behavior: smooth;
   
@@ -47,4 +47,9 @@ img {
   .scoll-pane::-webkit-scrollbar { 
   display: none;
     /* // Safari and Chrome */
+  }
+
+a :hover{
+    text-decoration: none;
+    color: black;
   }
